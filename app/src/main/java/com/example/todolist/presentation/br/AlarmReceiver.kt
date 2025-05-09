@@ -16,6 +16,7 @@ import javax.inject.Inject
 
 
 @AndroidEntryPoint
+//ngambil data TaskInfo yang dikirim dari alarm.
 class AlarmReceiver : BroadcastReceiver() {
     private var notificationManager: NotificationManagerCompat? = null
     @Inject

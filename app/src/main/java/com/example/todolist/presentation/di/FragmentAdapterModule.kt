@@ -9,6 +9,7 @@ import dagger.hilt.android.scopes.FragmentScoped
 import javax.inject.Named
 
 @Module
+//nyediain adapter yg diperlukan Fragment
 @InstallIn(FragmentComponent::class)
 object FragmentAdapterModule {
     @Provides

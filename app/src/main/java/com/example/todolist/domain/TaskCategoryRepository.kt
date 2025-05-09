@@ -7,6 +7,7 @@ import com.example.todolist.data.model.TaskCategoryInfo
 import com.example.todolist.data.model.TaskInfo
 import java.util.*
 
+//jembatan antara ViewModel ke database.
 interface TaskCategoryRepository {
     suspend fun updateTaskStatus(task: TaskInfo) : Int
     suspend fun deleteTask(task: TaskInfo)

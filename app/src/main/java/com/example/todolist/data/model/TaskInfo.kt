@@ -9,6 +9,7 @@ import java.util.*
 @Entity(tableName = "taskInfo")
 data class TaskInfo(
     @PrimaryKey(autoGenerate = false)
+    //Semua data tentang task user disimpan di sini.
     var id : Int,
     var description : String,
     var date : Date,

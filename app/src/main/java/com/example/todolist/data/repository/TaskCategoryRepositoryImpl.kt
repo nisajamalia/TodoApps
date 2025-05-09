@@ -13,6 +13,8 @@ import kotlinx.coroutines.withContext
 import java.util.*
 import javax.inject.Inject
 
+//Ini adalah jembatan antara kode & database.
+
 class TaskCategoryRepositoryImpl @Inject constructor(private val taskCategoryDao: TaskCategoryDao) :
     TaskCategoryRepository {
 

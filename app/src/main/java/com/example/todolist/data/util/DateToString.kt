@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import java.text.SimpleDateFormat
 import java.util.*
 
+//coverter tgl
 class DateToString {
     @SuppressLint("SimpleDateFormat")
     companion object {

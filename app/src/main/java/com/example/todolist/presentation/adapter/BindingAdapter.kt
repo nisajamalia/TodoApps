@@ -12,6 +12,7 @@ import com.google.android.material.chip.Chip
 import com.google.android.material.textview.MaterialTextView
 import java.util.*
 
+////menghubungkan data langsung ke tampilan XML secara otomatis pake databinding
 @SuppressLint("SetTextI18n")
 @BindingAdapter("count")
 fun setCount(materialTextView: MaterialTextView, count : Int){

@@ -13,6 +13,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @AndroidEntryPoint
+//ngambil data tugas (TaskInfo) yang dikirim dari notifikasi.
 class OnCompletedBroadcastReceiver : BroadcastReceiver() {
     @Inject lateinit var repository: TaskCategoryRepositoryImpl
 

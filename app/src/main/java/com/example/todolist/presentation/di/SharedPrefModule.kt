@@ -10,6 +10,7 @@ import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
+//nyediain akses ke SharedPreferences data kecil
 @InstallIn(SingletonComponent::class)
 object SharedPrefModule {
     @Provides

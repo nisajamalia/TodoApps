@@ -10,6 +10,7 @@ import javax.inject.Named
 import javax.inject.Singleton
 
 @Module
+//nyediain adapter yg digunakan frag
 @InstallIn(SingletonComponent::class)
 object SingletonAdapterModule {
     @Provides

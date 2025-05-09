@@ -9,6 +9,9 @@ import com.example.todolist.data.model.TaskInfo
 import java.util.*
 
 @Dao
+// pintu utama untuk ngakses db.
+//Dao langsung ke db nya
+//Mengelola semua operasi CRUD
 interface TaskCategoryDao {
     @Insert
     suspend fun insertTask(task : TaskInfo) : Long

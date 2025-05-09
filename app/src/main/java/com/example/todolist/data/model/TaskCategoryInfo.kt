@@ -4,6 +4,7 @@ import androidx.room.Embedded
 import androidx.room.Relation
 import java.io.Serializable
 
+// ini buat model data yang menggabungkan tugas (TaskInfo) dengan kategori-kategori yang berhubungan.
 data class TaskCategoryInfo(
 
     @Embedded val taskInfo: TaskInfo,

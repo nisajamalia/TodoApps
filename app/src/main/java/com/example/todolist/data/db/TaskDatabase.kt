@@ -4,6 +4,7 @@ import androidx.room.*
 import com.example.todolist.data.model.CategoryInfo
 import com.example.todolist.data.model.TaskInfo
 
+//room database
 @Database(entities = [TaskInfo::class, CategoryInfo::class], version = 1)
 @TypeConverters(DateConverter::class)
 abstract class TaskDatabase : RoomDatabase() {

@@ -10,6 +10,7 @@ import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
+//buat menyediakan objek yang dibutuhkan oleh aplikasi.
 @InstallIn(SingletonComponent::class)
 object DatabaseModule {
     @Provides

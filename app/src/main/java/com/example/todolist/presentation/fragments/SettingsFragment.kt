@@ -38,27 +38,6 @@ class SettingsFragment : Fragment() {
 //            darkTheme.isChecked = sharedPreferences.getBoolean("dark_theme", false)
         }
 
-//        binding.rateApp.setOnClickListener {
-//            val manager = ReviewManagerFactory.create(requireContext())
-//            val request = manager.requestReviewFlow()
-//            request.addOnCompleteListener {
-//                if(it.isSuccessful){
-//                    val reviewInfo = it.result
-//                    val flow = manager.launchReviewFlow(activity!!, reviewInfo!!)
-//                    flow.addOnCompleteListener {  }
-//                }else {
-//                    Snackbar.make(binding.root, "Some error occurred!", Snackbar.LENGTH_SHORT).setAction("Action", null).show()
-//                }
-//            }
-//        }
-
-//        binding.darkTheme.setOnCheckedChangeListener {_, isChecked ->
-//            if(isChecked) AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
-//            else AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
-//            editor.putBoolean("dark_theme", isChecked)
-//            editor.apply()
-//        }
-
         binding.lowTasks.setOnCheckedChangeListener { _, isChecked ->
             editor.putBoolean("0", isChecked)
             editor.apply()
