@@ -164,7 +164,7 @@ class NewTaskFragment : Fragment() {
         dialog.setContentView(R.layout.category_dialog)
         val editText = dialog.findViewById<TextInputEditText>(R.id.editText)
         val addCategory = dialog.findViewById<MaterialButton>(R.id.addCategory)
-        val addColor = dialog.findViewById<MaterialButton>(R.id.addColor)
+//        val addColor = dialog.findViewById<MaterialButton>(R.id.addColor)
         colorView = dialog.findViewById<View>(R.id.viewColor)
         colorView.setBackgroundColor(Color.parseColor(colorString))
 //        addColor.setOnClickListener { displayColorPickerDialog() }
@@ -187,24 +187,6 @@ class NewTaskFragment : Fragment() {
         return "#" + Integer.toHexString(color)
     }
 
-//    private fun displayColorPickerDialog() {
-//        ColorPickerDialogBuilder
-//            .with(context)
-//            .setTitle("Choose color")
-//            .wheelType(ColorPickerView.WHEEL_TYPE.CIRCLE)
-//            .density(12)
-//            .setOnColorSelectedListener { selectedColor ->
-//                colorString = "#" + Integer.toHexString(selectedColor)
-//            }
-//            .setPositiveButton("Ok") { _, _, _ ->
-//                colorView.setBackgroundColor(Color.parseColor(colorString))
-//            }
-//            .setNegativeButton("Cancel") { _,_ ->
-//                colorString = "#000000"
-//            }
-//            .build()
-//            .show()
-//    }
 
     private fun addNewCategoryChip(category: String) {
         val chip = Chip(context)
